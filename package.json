@@ -9,8 +9,6 @@
   "author": "jobi",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.2",
-    "express": "^4.17.1",
-    "request": "^2.88.2"
+    "node-fetch": "^2.6.0"
   }
 }
