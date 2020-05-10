@@ -10,6 +10,9 @@ url += query;
 
 processCards(url);
 
+
+// takes a scryfall api url
+// extracts all image uris for the cards and stores into a text file
 async function processCards(url) {
   do {
     var page = await requestPage(url);
