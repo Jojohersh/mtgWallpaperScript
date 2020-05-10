@@ -11,7 +11,7 @@ url += query;
 processCards(url);
 
 async function processCards(url) {
-  // do {
+  do {
     var page = await requestPage(url);
     var cards = page.data;
     writeCardsToFile(cards, "card_image_uris.txt");
@@ -23,7 +23,7 @@ async function processCards(url) {
     //**********************************************************
     url = page.next_page;
 
-  // } while(page.has_more);
+  } while(page.has_more);
 }
 
 // takes api scryfall api url as input
